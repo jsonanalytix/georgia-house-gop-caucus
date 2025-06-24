@@ -109,7 +109,7 @@ const Events: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-700 to-red-600 text-white">
+      <section className="relative bg-gradient-to-r from-blue-700 to-emerald-600 text-white">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-4xl mx-auto text-center">
@@ -133,7 +133,7 @@ const Events: React.FC = () => {
               onClick={() => setSelectedFilter(type.id)}
               className={`px-6 py-3 rounded-full font-medium transition-colors duration-200 ${
                 selectedFilter === type.id
-                  ? 'bg-red-600 text-white'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -151,7 +151,7 @@ const Events: React.FC = () => {
               <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${event.image})` }}>
                 <div className="h-full bg-black bg-opacity-30 flex items-end">
                   <div className="p-4">
-                    <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
                       {event.type.replace('-', ' ')}
                     </span>
                   </div>
@@ -191,7 +191,7 @@ const Events: React.FC = () => {
                 
                 <button
                   onClick={() => handleRSVP(event.id)}
-                  className="w-full bg-red-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+                  className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
                 >
                   <span>RSVP for Event</span>
                   <ArrowRight size={18} />
@@ -214,13 +214,13 @@ const Events: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200"
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
             >
               Contact Us
             </a>
             <a
               href="/get-involved"
-              className="border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors duration-200"
+              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               Join Our Network
             </a>

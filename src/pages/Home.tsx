@@ -37,7 +37,7 @@ const Home: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-red-700 to-blue-800 text-white">
+      <section className="relative bg-gradient-to-r from-blue-700 to-emerald-800 text-white">
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div 
           className="relative bg-cover bg-center bg-no-repeat"
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/get-involved"
-                  className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2 group"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2 group"
                 >
                   <span>{t('joinMovement')}</span>
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
@@ -82,8 +82,8 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {communityStats.map((stat, index) => (
             <div key={index} className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="w-8 h-8 text-red-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <stat.icon className="w-8 h-8 text-blue-600" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
               <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
               </div>
               <Link
                 to="/events"
-                className="inline-flex items-center space-x-2 mt-8 text-red-600 font-semibold hover:text-red-700 transition-colors duration-200"
+                className="inline-flex items-center space-x-2 mt-8 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
               >
                 <span>View Upcoming Events</span>
                 <ArrowRight size={18} />
@@ -169,7 +169,7 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-20 transition-opacity duration-200"></div>
                 <div className="absolute bottom-4 left-4">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <priority.icon className="w-6 h-6 text-red-600" />
+                    <priority.icon className="w-6 h-6 text-blue-600" />
                   </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@ const Home: React.FC = () => {
         <div className="text-center mt-12">
           <Link
             to="/issues"
-            className="inline-flex items-center space-x-2 bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200"
+            className="inline-flex items-center space-x-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
           >
             <span>Learn More About Our Priorities</span>
             <ArrowRight size={18} />

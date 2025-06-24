@@ -24,13 +24,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg border-b-4 border-red-600">
+    <header className="bg-white shadow-lg border-b-4 border-blue-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo and Title */}
           <div className="flex items-center space-x-4">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">GA</span>
               </div>
               <div>
@@ -50,9 +50,9 @@ const Header: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-red-600 ${
+                className={`text-sm font-medium transition-colors duration-200 hover:text-blue-600 ${
                   location.pathname === item.path
-                    ? 'text-red-600 border-b-2 border-red-600 pb-1'
+                    ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
                     : 'text-gray-700'
                 }`}
               >
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
             <LanguageSelector />
             <button
               onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,9 +84,9 @@ const Header: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-base font-medium transition-colors duration-200 hover:text-red-600 ${
+                  className={`text-base font-medium transition-colors duration-200 hover:text-blue-600 ${
                     location.pathname === item.path
-                      ? 'text-red-600'
+                      ? 'text-blue-600'
                       : 'text-gray-700'
                   }`}
                 >

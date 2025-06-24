@@ -112,12 +112,12 @@ const Issues: React.FC = () => {
             <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-                    <issue.icon className="w-8 h-8 text-red-600" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <issue.icon className="w-8 h-8 text-blue-600" />
                   </div>
                   <div>
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{issue.title}</h2>
-                    <p className="text-lg text-red-600 font-semibold">{issue.subtitle}</p>
+                    <p className="text-lg text-blue-600 font-semibold">{issue.subtitle}</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -165,13 +165,13 @@ const Issues: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200"
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
             >
               Share Your Priorities
             </a>
             <a
               href="/events"
-              className="border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors duration-200"
+              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-200"
             >
               Attend a Town Hall
             </a>

@@ -81,7 +81,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="bg-red-50 py-16">
+      <section className="bg-blue-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Our Mission
@@ -108,8 +108,8 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
             <div key={index} className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <value.icon className="w-8 h-8 text-red-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <value.icon className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
               <p className="text-gray-600 leading-relaxed">{value.description}</p>
@@ -135,7 +135,7 @@ const About: React.FC = () => {
                 <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url(${leader.image})` }}></div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{leader.name}</h3>
-                  <p className="text-red-600 font-semibold mb-3">{leader.title}</p>
+                  <p className="text-blue-600 font-semibold mb-3">{leader.title}</p>
                   <p className="text-gray-600 leading-relaxed">{leader.bio}</p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const About: React.FC = () => {
 
       {/* Commitment Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-red-600 to-blue-700 rounded-2xl text-white p-12">
+        <div className="bg-gradient-to-r from-blue-600 to-emerald-700 rounded-2xl text-white p-12">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Our Commitment to You

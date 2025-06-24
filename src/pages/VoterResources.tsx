@@ -136,7 +136,7 @@ const VoterResources: React.FC = () => {
 
       {/* Quick Links */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-red-50 rounded-xl p-8 mb-12">
+        <div className="bg-blue-50 rounded-xl p-8 mb-12">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
             Quick Actions
           </h2>
@@ -145,7 +145,7 @@ const VoterResources: React.FC = () => {
               href="https://registertovote.sos.ga.gov"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white p-4 rounded-lg text-center hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+              className="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Vote size={20} />
               <span className="font-semibold">Register to Vote</span>
@@ -161,7 +161,7 @@ const VoterResources: React.FC = () => {
             </a>
             <a
               href="#contact"
-              className="bg-green-600 text-white p-4 rounded-lg text-center hover:bg-green-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+              className="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
               <span className="font-semibold">Get Help</span>
@@ -185,8 +185,8 @@ const VoterResources: React.FC = () => {
           {resources.map((resource, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <resource.icon className="w-6 h-6 text-red-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <resource.icon className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">{resource.title}</h3>
@@ -202,7 +202,7 @@ const VoterResources: React.FC = () => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-red-600 hover:text-red-700 transition-colors duration-200 flex items-center space-x-1"
+                        className="text-blue-600 hover:text-blue-700 transition-colors duration-200 flex items-center space-x-1"
                       >
                         <span>{item.text}</span>
                         <ExternalLink size={14} />
@@ -285,7 +285,7 @@ const VoterResources: React.FC = () => {
       </section>
 
       {/* Contact for Help */}
-      <section id="contact" className="bg-red-50 py-16">
+      <section id="contact" className="bg-blue-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Need Help Voting?
@@ -295,23 +295,23 @@ const VoterResources: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <Phone className="w-8 h-8 text-red-600 mx-auto mb-3" />
+              <Phone className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600 text-sm">(404) 656-2871</p>
               <p className="text-gray-500 text-xs mt-1">Multilingual support available</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <FileText className="w-8 h-8 text-red-600 mx-auto mb-3" />
+              <FileText className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Email Support</h3>
               <p className="text-gray-600 text-sm">voter-help@gahousegop.org</p>
               <p className="text-gray-500 text-xs mt-1">Response within 24 hours</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <MapPin className="w-8 h-8 text-red-600 mx-auto mb-3" />
+              <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">In-Person Help</h3>
               <p className="text-gray-600 text-sm">Community offices statewide</p>
               <p className="text-gray-500 text-xs mt-1">
-                <a href="/contact" className="text-red-600 hover:text-red-700">Find locations →</a>
+                <a href="/contact" className="text-blue-600 hover:text-blue-700">Find locations →</a>
               </p>
             </div>
           </div>

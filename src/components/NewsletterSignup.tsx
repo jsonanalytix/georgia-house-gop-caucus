@@ -47,8 +47,8 @@ const NewsletterSignup: React.FC = () => {
   return (
     <div className="bg-white rounded-xl shadow-lg p-8">
       <div className="text-center mb-6">
-        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Mail className="w-8 h-8 text-red-600" />
+        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Mail className="w-8 h-8 text-blue-600" />
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
           Join Our Community Network
@@ -70,7 +70,7 @@ const NewsletterSignup: React.FC = () => {
               required
               value={formData.firstName}
               onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500 transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
             />
           </div>
           <div>
@@ -83,7 +83,7 @@ const NewsletterSignup: React.FC = () => {
               required
               value={formData.lastName}
               onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500 transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const NewsletterSignup: React.FC = () => {
             required
             value={formData.email}
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500 transition-colors duration-200"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
           />
         </div>
 
@@ -113,7 +113,7 @@ const NewsletterSignup: React.FC = () => {
             pattern="[0-9]{5}"
             value={formData.zipCode}
             onChange={(e) => setFormData(prev => ({ ...prev, zipCode: e.target.value }))}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500 transition-colors duration-200"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
           />
         </div>
 
@@ -128,7 +128,7 @@ const NewsletterSignup: React.FC = () => {
                   type="checkbox"
                   checked={formData.interests.includes(interest)}
                   onChange={() => handleInterestChange(interest)}
-                  className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                  className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                 />
                 <span className="text-sm text-gray-700">{interest}</span>
               </label>
@@ -138,7 +138,7 @@ const NewsletterSignup: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 focus:ring-4 focus:ring-red-200 transition-all duration-200 font-medium"
+          className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition-all duration-200 font-medium"
         >
           {t('joinMovement')}
         </button>

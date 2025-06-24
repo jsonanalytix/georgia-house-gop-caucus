@@ -123,7 +123,7 @@ const GetInvolved: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-700 to-red-600 text-white">
+      <section className="relative bg-gradient-to-r from-blue-700 to-emerald-600 text-white">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-4xl mx-auto text-center">
@@ -147,12 +147,12 @@ const GetInvolved: React.FC = () => {
               onClick={() => setActiveTab(opportunity.id)}
               className={`cursor-pointer p-6 rounded-xl border-2 transition-all duration-200 ${
                 activeTab === opportunity.id
-                  ? 'border-red-500 bg-red-50'
-                  : 'border-gray-200 bg-white hover:border-red-300'
+                  ? 'border-blue-500 bg-blue-50'
+                  : 'border-gray-200 bg-white hover:border-blue-300'
               }`}
             >
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-red-100">
-                <opportunity.icon className="w-8 h-8 text-red-600" />
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100">
+                <opportunity.icon className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
                 {opportunity.title}
@@ -210,7 +210,7 @@ const GetInvolved: React.FC = () => {
                             required
                             value={volunteerForm.firstName}
                             onChange={(e) => setVolunteerForm(prev => ({ ...prev, firstName: e.target.value }))}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                         </div>
                         <div>
@@ -222,7 +222,7 @@ const GetInvolved: React.FC = () => {
                             required
                             value={volunteerForm.lastName}
                             onChange={(e) => setVolunteerForm(prev => ({ ...prev, lastName: e.target.value }))}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                         </div>
                       </div>
@@ -236,7 +236,7 @@ const GetInvolved: React.FC = () => {
                           required
                           value={volunteerForm.email}
                           onChange={(e) => setVolunteerForm(prev => ({ ...prev, email: e.target.value }))}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                         />
                       </div>
 
@@ -249,7 +249,7 @@ const GetInvolved: React.FC = () => {
                             type="tel"
                             value={volunteerForm.phone}
                             onChange={(e) => setVolunteerForm(prev => ({ ...prev, phone: e.target.value }))}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                         </div>
                         <div>
@@ -262,7 +262,7 @@ const GetInvolved: React.FC = () => {
                             pattern="[0-9]{5}"
                             value={volunteerForm.zipCode}
                             onChange={(e) => setVolunteerForm(prev => ({ ...prev, zipCode: e.target.value }))}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                         </div>
                       </div>
@@ -278,7 +278,7 @@ const GetInvolved: React.FC = () => {
                                 type="checkbox"
                                 checked={volunteerForm.interests.includes(interest)}
                                 onChange={() => handleArrayChange('interests', interest)}
-                                className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                               />
                               <span className="text-sm text-gray-700">{interest}</span>
                             </label>
@@ -297,7 +297,7 @@ const GetInvolved: React.FC = () => {
                                 type="checkbox"
                                 checked={volunteerForm.languages.includes(language)}
                                 onChange={() => handleArrayChange('languages', language)}
-                                className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                               />
                               <span className="text-sm text-gray-700">{language}</span>
                             </label>
@@ -307,7 +307,7 @@ const GetInvolved: React.FC = () => {
 
                       <button
                         type="submit"
-                        className="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 transition-colors duration-200 font-medium"
+                        className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
                       >
                         Submit Volunteer Application
                       </button>
@@ -327,14 +327,14 @@ const GetInvolved: React.FC = () => {
                     <div className="space-y-4">
                       <a
                         href="/contact"
-                        className="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
+                        className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
                       >
                         <span>Contact Us</span>
                         <ArrowRight size={18} />
                       </a>
                       <a
                         href="/events"
-                        className="w-full border-2 border-red-600 text-red-600 py-3 px-4 rounded-md hover:bg-red-600 hover:text-white transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
+                        className="w-full border-2 border-blue-600 text-blue-600 py-3 px-4 rounded-md hover:bg-blue-600 hover:text-white transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
                       >
                         <span>View Upcoming Events</span>
                         <Calendar size={18} />
@@ -389,7 +389,7 @@ const GetInvolved: React.FC = () => {
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">{story.name}</h4>
-                    <p className="text-sm text-red-600">{story.role}</p>
+                    <p className="text-sm text-blue-600">{story.role}</p>
                   </div>
                 </div>
                 <p className="text-gray-700 italic">"{story.quote}"</p>

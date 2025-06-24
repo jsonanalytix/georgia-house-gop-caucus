@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-700 to-red-600 text-white">
+      <section className="relative bg-gradient-to-r from-blue-700 to-emerald-600 text-white">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-4xl mx-auto text-center">
@@ -330,7 +330,7 @@ const Contact: React.FC = () => {
               </p>
               <a 
                 href="/events" 
-                className="text-red-600 font-medium hover:text-red-700 transition-colors duration-200"
+                className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200"
               >
                 View Schedule →
               </a>
@@ -353,7 +353,7 @@ const Contact: React.FC = () => {
               </p>
               <a 
                 href="/" 
-                className="text-red-600 font-medium hover:text-red-700 transition-colors duration-200"
+                className="text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200"
               >
                 Subscribe Now →
               </a>
